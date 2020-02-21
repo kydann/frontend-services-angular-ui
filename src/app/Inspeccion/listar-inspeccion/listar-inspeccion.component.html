@@ -104,9 +104,9 @@
       <hr />
 
       <table class="table table-dark">
-        <tr>
+        <tr *ngFor="let inspeccion of inspecciones">
           <td><label for="">Vo. Bo. Jefe de Producción</label></td>
-          <td></td>
+          <td>{{inspeccion.jefeprod}}</td>
         </tr>
       </table>
 
