@@ -1,0 +1,194 @@
+<div class="container">
+  <div class="card">
+
+    <div class="card-header">
+      <h3>Inspecciones</h3>
+    </div>
+
+    <div class="card-body" style="width: 100%;">
+
+      <table class="table table-dark">
+        <tr>
+          <td>Cliente:</td>
+        </tr>
+        <tr *ngFor="let inspeccion of inspecciones">
+          <td>{{inspeccion.cliente}}</td>
+        </tr>
+      </table>
+
+      <table class="table table-dark">
+        <tr>
+          <td align="center"><label for="">Producto:</label></td>
+          <td align="center"><label for="">Clave:</label></td>
+        </tr>
+
+        <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+          <td>{{inspeccion.product}}</td>
+          <td>{{inspeccion.clave}}</td>
+        </tr>
+
+        <tr>
+          <td align="center"><label for="">Frecuencia de Inspeccion:</label></td>
+          <td align="center"><label for="">Tamaño de la muestra:</label></td>
+        </tr>
+
+        <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+          <td>{{inspeccion.frecinsp}}</td>
+          <td>{{inspeccion.tammuestra}}</td>
+        </tr>
+
+      </table>
+
+      <hr />
+
+      <table align="center" class="table table-dark">
+        <tr>
+          <td>
+            <h2>Liberacion</h2>
+          </td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table align="center" class="table table-dark">
+        <tr>
+          <td></td>
+          <td align="center"><label for="">Especificaciones</label></td>
+          <td align="center"><label for="">Tiempo</label></td>
+          <td align="center"><label for="">Observaciones</label></td>
+        </tr>
+
+        <tr>
+          <td><label for="">#Long. Espiral</label></td>
+        </tr>
+
+        <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+          <td>{{inspeccion.id}}</td>
+          <td>{{inspeccion.longespiral}}</td>
+          <td>{{inspeccion.tiempo}}</td>
+          <td>{{inspeccion.observaciones}}</td>
+        </tr>
+
+        <tr>
+          <td><label for="">#Diametro Interior</label></td>
+        </tr>
+        <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+          <td>{{inspeccion.id}}</td>
+          <td>{{inspeccion.dminterior}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><label for="">#Espesor (Calibrado)</label></td>
+        </tr>
+        <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+          <td>{{inspeccion.id}}</td>
+          <td>{{inspeccion.espcalib}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><label for="">#Color y Brillo</label></td>
+        </tr>
+        <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+          <td>{{inspeccion.id}}</td>
+          <td>{{inspeccion.jefeprod}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <table class="table table-dark">
+        <tr>
+          <td><label for="">Vo. Bo. Jefe de Producción</label></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <table class="table table-dark">
+        <tr>
+          <td align="center">#Parametros</td>
+          <td align="center"><label for="">Zona 1</label></td>
+          <td align="center"><label for="">Zona 2</label></td>
+          <td align="center"><label for="">Zona 3</label></td>
+          <td align="center"><label for="">Husillo</label></td>
+          <td align="center"><label for="">Formador</label></td>
+        </tr>
+        <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+          <td>{{inspeccion.id}}</td>
+          <td>{{inspeccion.param1}}</td>
+          <td>{{inspeccion.param2}}</td>
+          <td>{{inspeccion.param3}}</td>
+          <td>{{inspeccion.param4}}</td>
+          <td>{{inspeccion.param5}}</td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <div id="info">
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <td><label for="">#</label></td>
+            <td><label for="">Supervisor de turno</label></td>
+            <td><label for="">No. Maquina</label></td>
+            <td><label for="">Fecha</label></td>
+            <td><label for="">Turno</label></td>
+            <td><label for="">Hora</label></td>
+            <td><label for="">Long. Espiral</label></td>
+            <td><label for="">Diametro Interior</label></td>
+            <td><label for="">Espesor calibrado</label></td>
+            <td><label for="">Paso</label></td>
+            <td><label for="">Color/Brillo</label></td>
+            <td><label for="">Tiempo</label></td>
+            <td><label for="">Temp. Zona 1</label></td>
+            <td><label for="">Temp. Zona 2</label></td>
+            <td><label for="">Temp. Zona 3</label></td>
+            <td><label for="">Vel. Extrusora</label></td>
+            <td><label for="">Vel. Jalador</label></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+            <td>{{inspeccion.id}}</td>
+            <td>{{inspeccion.supturno}}</td>
+            <td>{{inspeccion.nomaquina}}</td>
+            <td>{{inspeccion.fecha}}</td>
+            <td>{{inspeccion.turno}}</td>
+            <td>{{inspeccion.hora}}</td>
+            <td>{{inspeccion.longesp}}</td>
+            <td>{{inspeccion.dmint}}</td>
+            <td>{{inspeccion.espcalib}}</td>
+            <td>{{inspeccion.paso}}</td>
+            <td>{{inspeccion.colb}}</td>
+            <td>{{inspeccion.timee}}</td>
+            <td>{{inspeccion.zona1}}</td>
+            <td>{{inspeccion.zona2}}</td>
+            <td>{{inspeccion.zona3}}</td>
+            <td>{{inspeccion.velextrusora}}</td>
+            <td>{{inspeccion.veljalador}}</td>
+            <td><button class="btn btn-warning">Editar</button></td>
+            <td><button class="btn btn-danger">Eliminar</button></td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+      <br />
+
+      <hr />
+
+    </div>
+  </div>
+</div>

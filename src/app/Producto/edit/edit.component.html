@@ -1,0 +1,157 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Modificar Producto</h3>
+    </div>
+    <div class="card-body">
+
+      <div id="info">
+      <form action="">
+        <table align="center">
+          <thead>
+          <tr>
+            <td>Cliente</td>
+            <td>Fecha</td>
+            <td>No. Op.</td>
+            <td>Pedido</td>
+            <td>Ref. SAE</td>
+            <td>Producto</td>
+            <td>Color</td>
+            <td>Pigmentado</td>
+            <td>SAE</td>
+            <td>Cantidad</td>
+            <td>Clave</td>
+            <td>Fact. Conversion</td>
+            <td>Piezas</td>
+            <td>Caja</td>
+            <td>Bolsa</td>
+            <td>Clave Empaque</td>
+            <td>Observaciones</td>
+            <td>Descripcion</td>
+            <td>Cant. Insumos</td>
+            <td>Cant. Arranque Maquina</td>
+            <td>Desc. Arranque Maquina</td>
+            <td>Cant. Produccion</td>
+            <td>Desc. Produccion</td>
+            <td>Cant. Total Materia Prima</td>
+            <td>Desc. Total Materia Prima</td>
+            <td>Observacion Gral</td>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>
+              <input [(ngModel)]="producto.cliente" name="cliente" type="text" class="form-control">
+            </td>
+
+            <td>
+              <input [(ngModel)]="producto.fecha" name="fecha" type="text" class="form-control">
+            </td>
+
+            <td>
+              <input [(ngModel)]="producto.nooperacion" name="no_operacion" type="text"
+                     class="form-control">
+            </td>
+
+            <td>
+              <input [(ngModel)]="producto.pedido" name="Pedido" type="text" class="form-control">
+            </td>
+
+            <td>
+              <input [(ngModel)]="producto.refsae" name="ref_sae" type="text" class="form-control">
+            </td>
+
+            <td>
+              <input [(ngModel)]="producto.producto" name="productos" type="text" class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.color" name="color" type="text" class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.pigmentado" name="pigmentado" type="text" class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.sae" name="sae" type="text" class="form-control">
+            </td>
+
+            <td>
+              <input [(ngModel)]="producto.cantidad" name="Cantidad" type="text" class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.clave" name="clave" type="text" class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.factorconversion" name="factor_conversion" type="text"
+                     class="form-control">
+            </td>
+
+            <td>
+              <input size="5px" [(ngModel)]="producto.piezas" name="piezas" type="text"
+                     class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.caja" name="caja" type="text" class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.bolsa" name="bolsa" type="text" class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.claveempaque" name="clave_empaque" type="text"
+                     class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.observaciones" name="observaciones" type="text"
+                     class="form-control">
+            </td>
+
+            <td>
+              <input [(ngModel)]="producto.descripcion" name="descripcion" type="text"
+                     class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.cantinsumos" name="cant_insumos" type="text"
+                     class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.cantarrmaquina" name="cant_arr_maquina" type="text"
+                     class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.descarrmaquina" name="desc_arr_maquina" type="text"
+                     class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.cantproduccion" name="cant_produccion" type="text"
+                     class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.descproduccion" name="desc_produccion" type="text"
+                     class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.canttotalmatprima" name="cant_total_mat_prima" type="text"
+                     class="form-control">
+            </td>
+            <td>
+              <input [(ngModel)]="producto.desctotalmatprima" name="desc_total_mat_prima" type="text"
+                     class="form-control">
+            </td>
+
+            <td>
+              <input size="100%" [(ngModel)]="producto.observacionesgral" name="observaciones_gral"
+                     type="text" class="form-control">
+            </td>
+
+          </tr>
+          </tbody>
+
+        </table>
+
+        <button (click)="ActualizarProducto(producto)" class="btn btn-danger">Actualizar</button>
+
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
