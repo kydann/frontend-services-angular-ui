@@ -1,1 +1,204 @@
-<p>edit-inspeccion works!</p>
+<div class="container">
+  <div class="card">
+
+    <div class="card-header">
+      <h3>Inspecciones</h3>
+    </div>
+
+    <form action="">
+
+    <div class="card-body" style="width: 100%;">
+
+
+
+      <table class="table table-white">
+        <tr>
+          <td>Cliente:</td>
+        </tr>
+        <tr>
+          <td><input [(ngModel)]="inspeccion.cliente" name="desc_produccion" type="text" class="form-control"></td>
+        </tr>
+      </table>
+
+      <table class="table table-white">
+        <tr>
+          <td align="center"><label for="">Producto:</label></td>
+          <td align="center"><label for="">Clave:</label></td>
+        </tr>
+
+        <tr class="text-center">
+          <td><input [(ngModel)]="inspeccion.product" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.clave" name="desc_produccion" type="text" class="form-control"></td>
+        </tr>
+
+        <tr>
+          <td align="center"><label for="">Frecuencia de Inspeccion:</label></td>
+          <td align="center"><label for="">Tamaño de la muestra:</label></td>
+        </tr>
+
+        <tr class="text-center">
+          <td><input [(ngModel)]="inspeccion.frecinsp" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.tammuestra" name="desc_produccion" type="text" class="form-control"></td>
+        </tr>
+
+      </table>
+
+      <hr />
+
+      <table align="center" class="table table-white">
+        <tr>
+          <td align="center">
+            <h4>Liberacion</h4>
+          </td>
+        </tr>
+      </table>
+
+      <table align="center" class="table table-white">
+        <tr>
+          <td></td>
+          <td align="center"><label for="">Especificaciones</label></td>
+          <td align="center"><label for="">Tiempo</label></td>
+          <td align="center"><label for="">Observaciones</label></td>
+        </tr>
+
+        <tr>
+          <td><label for="">#Long. Espiral</label></td>
+        </tr>
+
+        <tr class="text-center">
+          <td></td>
+          <td><input [(ngModel)]="inspeccion.longespiral" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.tiempo" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.observaciones" name="desc_produccion" type="text" class="form-control"></td>
+        </tr>
+
+        <tr>
+          <td><label for="">#Diametro Interior</label></td>
+        </tr>
+        <tr class="text-center">
+          <td></td>
+          <td><input [(ngModel)]="inspeccion.dminterior" name="desc_produccion" type="text" class="form-control"></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><label for="">#Espesor (Calibrado)</label></td>
+        </tr>
+        <tr class="text-center">
+          <td></td>
+          <td><input [(ngModel)]="inspeccion.espcalib" name="desc_produccion" type="text" class="form-control"></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><label for="">#Color y Brillo</label></td>
+        </tr>
+        <tr class="text-center">
+          <td></td>
+          <td><input [(ngModel)]="inspeccion.jefeprod" name="desc_produccion" type="text" class="form-control"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <table class="table table-white">
+        <tr>
+          <td><label for="">Vo. Bo. Jefe de Producción</label></td>
+          <td><input [(ngModel)]="inspeccion.jefeprod" name="desc_produccion" type="text" class="form-control"></td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <table class="table table-white">
+        <tr>
+          <td align="center">#Parametros</td>
+          <td align="center"><label for="">Zona 1</label></td>
+          <td align="center"><label for="">Zona 2</label></td>
+          <td align="center"><label for="">Zona 3</label></td>
+          <td align="center"><label for="">Husillo</label></td>
+          <td align="center"><label for="">Formador</label></td>
+        </tr>
+        <tr class="text-center">
+          <td></td>
+          <td><input [(ngModel)]="inspeccion.param1" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.param2" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.param3" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.param4" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.param5" name="desc_produccion" type="text" class="form-control"></td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <div id="info">
+        <table class="table table-white">
+          <thead>
+          <tr>
+            <td><label for="">#</label></td>
+            <td><label for="">Supervisor de turno</label></td>
+            <td><label for="">No. Maquina</label></td>
+            <td><label for="">Fecha</label></td>
+            <td><label for="">Turno</label></td>
+            <td><label for="">Hora</label></td>
+            <td><label for="">Long. Espiral</label></td>
+            <td><label for="">Diametro Interior</label></td>
+            <td><label for="">Espesor calibrado</label></td>
+            <td><label for="">Paso</label></td>
+            <td><label for="">Color/Brillo</label></td>
+            <td><label for="">Tiempo</label></td>
+            <td><label for="">Temp. Zona 1</label></td>
+            <td><label for="">Temp. Zona 2</label></td>
+            <td><label for="">Temp. Zona 3</label></td>
+            <td><label for="">Vel. Extrusora</label></td>
+            <td><label for="">Vel. Jalador</label></td>
+            <td></td>
+            <td></td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="text-center">
+            <td></td>
+            <td><input [(ngModel)]="inspeccion.supturno" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.nomaquina" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.fecha" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.turno" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.hora" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.longesp" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.dmint" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.espcalib" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.paso" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.colb" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.timee" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.zona1" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.zona2" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.zona3" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.velextrusora" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.veljalador" name="desc_produccion" type="text" class="form-control"></td>
+            <!--<td><button class="btn btn-danger">Eliminar</button></td>-->
+          </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <hr />
+
+    </div>
+
+      <table align="center">
+        <tr align="center">
+          <td><button (click)="ActualizarInspeccion(inspeccion)" class="btn btn-warning">Actualizar</button></td>
+        </tr>
+      </table>
+
+      <hr/>
+
+    </form>
+  </div>
+</div>

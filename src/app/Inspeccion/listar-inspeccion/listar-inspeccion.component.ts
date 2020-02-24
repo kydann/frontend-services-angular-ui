@@ -18,4 +18,9 @@ export class ListarInspeccionComponent implements OnInit {
     this.service.getInspecciones().subscribe(data => { this.inspecciones = data; } );
   }
 
+  EditarInspeccion(insp: Inspeccion): void {
+    localStorage.setItem('id', insp.id.toString());
+    this.router.navigate(['editI']);
+  }
+
 }

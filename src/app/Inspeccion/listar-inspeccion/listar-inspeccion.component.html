@@ -7,7 +7,7 @@
 
     <div class="card-body" style="width: 100%;">
 
-      <table class="table table-dark">
+      <table class="table table-white">
         <tr>
           <td>Cliente:</td>
         </tr>
@@ -16,7 +16,7 @@
         </tr>
       </table>
 
-      <table class="table table-dark">
+      <table class="table table-white">
         <tr>
           <td align="center"><label for="">Producto:</label></td>
           <td align="center"><label for="">Clave:</label></td>
@@ -41,17 +41,15 @@
 
       <hr />
 
-      <table align="center" class="table table-dark">
+      <table align="center" class="table table-white">
         <tr>
-          <td>
-            <h2>Liberacion</h2>
+          <td align="center">
+            <h4>Liberacion</h4>
           </td>
         </tr>
       </table>
 
-      <br />
-
-      <table align="center" class="table table-dark">
+      <table align="center" class="table table-white">
         <tr>
           <td></td>
           <td align="center"><label for="">Especificaciones</label></td>
@@ -103,7 +101,7 @@
 
       <hr />
 
-      <table class="table table-dark">
+      <table class="table table-white">
         <tr *ngFor="let inspeccion of inspecciones">
           <td><label for="">Vo. Bo. Jefe de Producción</label></td>
           <td>{{inspeccion.jefeprod}}</td>
@@ -112,7 +110,7 @@
 
       <hr />
 
-      <table class="table table-dark">
+      <table class="table table-white">
         <tr>
           <td align="center">#Parametros</td>
           <td align="center"><label for="">Zona 1</label></td>
@@ -134,7 +132,7 @@
       <hr />
 
       <div id="info">
-      <table class="table table-dark">
+      <table class="table table-white">
         <thead>
           <tr>
             <td><label for="">#</label></td>
@@ -177,7 +175,7 @@
             <td>{{inspeccion.zona3}}</td>
             <td>{{inspeccion.velextrusora}}</td>
             <td>{{inspeccion.veljalador}}</td>
-            <td><button class="btn btn-warning">Editar</button></td>
+            <td><button (click)="EditarInspeccion(inspeccion)" class="btn btn-warning">Editar</button></td>
             <!--<td><button class="btn btn-danger">Eliminar</button></td>-->
           </tr>
         </tbody>
