@@ -131,8 +131,18 @@
 
       <hr />
 
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" class="form-control" name="filterPostI" placeholder="Buscar Supervisor..." [(ngModel)]="filterPostI">
+          </div>
+        </div>
+      </div>
+
       <div id="info">
-      <table class="table table-white">
+        <div class="row">
+          <div class="col">
+            <table class="table table-striped">
         <thead>
           <tr>
             <td><label for="">#</label></td>
@@ -157,7 +167,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+          <tr *ngFor="let inspeccion of inspecciones | filter : filterPostI" class="text-center">
             <td>{{inspeccion.id}}</td>
             <td>{{inspeccion.supturno}}</td>
             <td>{{inspeccion.nomaquina}}</td>
@@ -181,6 +191,8 @@
         </tbody>
 
       </table>
+          </div>
+        </div>
     </div>
 
       <br />

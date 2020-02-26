@@ -12,6 +12,7 @@ import { Productos } from '../../Modelo/Productos';
 export class ListarComponent implements OnInit {
 
   product: Productos[];
+  filterPost = '';
 
   constructor(private service: ServiceService, private router: Router) { }
 

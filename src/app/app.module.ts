@@ -11,6 +11,7 @@ import { EditComponent } from './Producto/edit/edit.component';
 import { ListarInspeccionComponent } from './Inspeccion/listar-inspeccion/listar-inspeccion.component';
 import { AddInspeccionComponent } from './Inspeccion/add-inspeccion/add-inspeccion.component';
 import { EditInspeccionComponent } from './Inspeccion/edit-inspeccion/edit-inspeccion.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 import { ServiceService } from './Service/service.service';
 
@@ -22,7 +23,8 @@ import { ServiceService } from './Service/service.service';
     EditComponent,
     ListarInspeccionComponent,
     AddInspeccionComponent,
-    EditInspeccionComponent
+    EditInspeccionComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

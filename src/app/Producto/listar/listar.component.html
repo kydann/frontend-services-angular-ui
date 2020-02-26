@@ -7,7 +7,18 @@
 
     <div class="card-body" style="width: 100%;">
       <div id="info">
-        <table class="table table-white">
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input type="text" class="form-control" name="filterPost" placeholder="Buscar Cliente..." [(ngModel)]="filterPost">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+        <table class="table table-striped">
           <thead>
             <tr>
               <td><label for="">#</label></td>
@@ -42,7 +53,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let produc of product">
+            <tr *ngFor="let produc of product | filter : filterPost">
               <td>{{produc.id}}</td>
               <td>{{produc.cliente}}</td>
               <td>{{produc.fecha}}</td>
@@ -74,8 +85,9 @@
               <!--<td><button class="btn btn-danger">Eliminar</button></td>-->
             </tr>
           </tbody>
-
         </table>
+          </div>
+        </div>
       </div>
 
     </div>

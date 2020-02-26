@@ -11,6 +11,7 @@ import { Inspeccion } from '../../Modelo/Inspeccion';
 export class ListarInspeccionComponent implements OnInit {
 
   inspecciones: Inspeccion[];
+  filterPostI = '';
 
   constructor(private service: ServiceService, private router: Router) { }
 
