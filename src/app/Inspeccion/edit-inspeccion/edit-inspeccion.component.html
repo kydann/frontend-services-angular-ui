@@ -14,7 +14,7 @@
           <td>Cliente:</td>
         </tr>
         <tr>
-          <td><input [(ngModel)]="inspeccion.cliente" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.cliente" name="cliente" type="text" class="form-control"></td>
         </tr>
       </table>
 
@@ -25,8 +25,8 @@
         </tr>
 
         <tr class="text-center">
-          <td><input [(ngModel)]="inspeccion.product" name="desc_produccion" type="text" class="form-control"></td>
-          <td><input [(ngModel)]="inspeccion.clave" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.product" name="product" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.clave" name="clave" type="text" class="form-control"></td>
         </tr>
 
         <tr>
@@ -35,8 +35,8 @@
         </tr>
 
         <tr class="text-center">
-          <td><input [(ngModel)]="inspeccion.frecinsp" name="desc_produccion" type="text" class="form-control"></td>
-          <td><input [(ngModel)]="inspeccion.tammuestra" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.frecinsp" name="frecinsp" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.tammuestra" name="tammuestra" type="text" class="form-control"></td>
         </tr>
 
       </table>
@@ -65,9 +65,9 @@
 
         <tr class="text-center">
           <td></td>
-          <td><input [(ngModel)]="inspeccion.longespiral" name="desc_produccion" type="text" class="form-control"></td>
-          <td><input [(ngModel)]="inspeccion.tiempo" name="desc_produccion" type="text" class="form-control"></td>
-          <td><input [(ngModel)]="inspeccion.observaciones" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.longespiral" name="longespiral" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.tiempo" name="tiempo" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.observaciones" name="observaciones" type="text" class="form-control"></td>
         </tr>
 
         <tr>
@@ -75,7 +75,7 @@
         </tr>
         <tr class="text-center">
           <td></td>
-          <td><input [(ngModel)]="inspeccion.dminterior" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.dminterior" name="dminterior" type="text" class="form-control"></td>
           <td></td>
           <td></td>
         </tr>
@@ -85,7 +85,7 @@
         </tr>
         <tr class="text-center">
           <td></td>
-          <td><input [(ngModel)]="inspeccion.espcalib" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.espcalib" name="espcalib" type="text" class="form-control"></td>
           <td></td>
           <td></td>
         </tr>
@@ -95,7 +95,7 @@
         </tr>
         <tr class="text-center">
           <td></td>
-          <td><input [(ngModel)]="inspeccion.jefeprod" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.colb" name="colb" type="text" class="form-control"></td>
           <td></td>
           <td></td>
         </tr>
@@ -106,7 +106,7 @@
       <table class="table table-white">
         <tr>
           <td><label for="">Vo. Bo. Jefe de Producción</label></td>
-          <td><input [(ngModel)]="inspeccion.jefeprod" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.jefeprod" name="jefeprod" type="text" class="form-control"></td>
         </tr>
       </table>
 
@@ -123,11 +123,11 @@
         </tr>
         <tr class="text-center">
           <td></td>
-          <td><input [(ngModel)]="inspeccion.param1" name="desc_produccion" type="text" class="form-control"></td>
-          <td><input [(ngModel)]="inspeccion.param2" name="desc_produccion" type="text" class="form-control"></td>
-          <td><input [(ngModel)]="inspeccion.param3" name="desc_produccion" type="text" class="form-control"></td>
-          <td><input [(ngModel)]="inspeccion.param4" name="desc_produccion" type="text" class="form-control"></td>
-          <td><input [(ngModel)]="inspeccion.param5" name="desc_produccion" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.param1" name="param1" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.param2" name="param2" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.param3" name="param3" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.param4" name="param4" type="text" class="form-control"></td>
+          <td><input [(ngModel)]="inspeccion.param5" name="param5" type="text" class="form-control"></td>
         </tr>
       </table>
 
@@ -161,22 +161,22 @@
           <tbody>
           <tr class="text-center">
             <td></td>
-            <td><input [(ngModel)]="inspeccion.supturno" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.nomaquina" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.fecha" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.turno" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.hora" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.longesp" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.dmint" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.espcalib" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.paso" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.colb" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.timee" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.zona1" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.zona2" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.zona3" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.velextrusora" name="desc_produccion" type="text" class="form-control"></td>
-            <td><input [(ngModel)]="inspeccion.veljalador" name="desc_produccion" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.supturno" name="supturno" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.nomaquina" name="nomaquina" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.fecha" name="fecha" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.turno" name="turno" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.hora" name="hora" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.longesp" name="longesp" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.dmint" name="dmint" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.espcalib" name="espcalib" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.paso" name="paso" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.colb" name="colb" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.timee" name="timee" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.zona1" name="zona1" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.zona2" name="zona2" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.zona3" name="zona3" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.velextrusora" name="velextrusora" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspeccion.veljalador" name="veljalador" type="text" class="form-control"></td>
             <!--<td><button class="btn btn-danger">Eliminar</button></td>-->
           </tr>
           </tbody>
