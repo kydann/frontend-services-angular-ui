@@ -12,6 +12,7 @@ import { ListarInspeccionComponent } from './Inspeccion/listar-inspeccion/listar
 import { AddInspeccionComponent } from './Inspeccion/add-inspeccion/add-inspeccion.component';
 import { EditInspeccionComponent } from './Inspeccion/edit-inspeccion/edit-inspeccion.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { DataTablesModule } from 'angular-datatables';
 
 import { ServiceService } from './Service/service.service';
 
@@ -28,6 +29,7 @@ import { ServiceService } from './Service/service.service';
   ],
   imports: [
     BrowserModule,
+    DataTablesModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule

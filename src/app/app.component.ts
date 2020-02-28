@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataTablesModule } from 'angular-datatables';
+import {BrowserModule} from '@angular/platform-browser';
+import {HttpClient} from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +13,10 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'frontend';
 
-  constructor(private router: Router) { }
+  public empData: Object;
+  public temp: Object = false;
+
+  constructor(private router: Router, private http: HttpClient) { }
 
   ListarProducto() {
     this.router.navigate(["listarP"]);
@@ -25,6 +32,13 @@ export class AppComponent {
 
   NuevoInspeccion() {
     this.router.navigate(["addI"]);
+  }
+
+  ngOnInit(): void {
+    this.http.get('http://localhost:8080/api/inspeccion').subscribe((resp: Response) => {
+      this.empData = resp;
+      this.temp = true;
+    });
   }
 
 }

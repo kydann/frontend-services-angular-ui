@@ -7,9 +7,10 @@
 
     <div class="card-body" style="width: 100%;">
 
+      <!--
       <table class="table table-white">
         <tr>
-          <td>Cliente:</td>
+          <td><label for="">Cliente:</label></td>
         </tr>
         <tr *ngFor="let inspeccion of inspecciones">
           <td>{{inspeccion.cliente}}</td>
@@ -93,7 +94,7 @@
         </tr>
         <tr *ngFor="let inspeccion of inspecciones" class="text-center">
           <td>{{inspeccion.id}}</td>
-          <td>{{inspeccion.jefeprod}}</td>
+          <td>{{inspeccion.colb}}</td>
           <td></td>
           <td></td>
         </tr>
@@ -128,7 +129,7 @@
           <td>{{inspeccion.param5}}</td>
         </tr>
       </table>
-
+      -->
       <hr />
 
       <div class="row">
@@ -139,13 +140,36 @@
         </div>
       </div>
 
+      <script>
+        $(document).ready( function () {
+          $('#myTable').DataTable();
+        } );
+      </script>
+
       <div id="info">
         <div class="row">
           <div class="col">
-            <table class="table table-striped">
+            <table id="myTable" class="table table-striped">
         <thead>
           <tr>
             <td><label for="">#</label></td>
+            <td><label for="">Cliente:</label></td>
+            <td><label for="">Producto:</label></td>
+            <td><label for="">Frecuencia de Inspeccion:</label></td>
+            <td><label for="">Tamaño de la muestra:</label></td>
+            <td><label for="">Clave:</label></td>
+            <td><label for="">Especificaciones</label></td>
+            <td><label for="">Tiempo</label></td>
+            <td><label for="">Observaciones</label></td>
+            <td><label for="">#Diametro Interior</label></td>
+            <td><label for="">#Espesor (Calibrado)</label></td>
+            <td><label for="">#Color y Brillo</label></td>
+            <td><label for="">Vo. Bo. Jefe de Producción</label></td>
+            <td><label for="">Zona 1</label></td>
+            <td><label for="">Zona 2</label></td>
+            <td><label for="">Zona 3</label></td>
+            <td><label for="">Husillo</label></td>
+            <td><label for="">Formador</label></td>
             <td><label for="">Supervisor de turno</label></td>
             <td><label for="">No. Maquina</label></td>
             <td><label for="">Fecha</label></td>
@@ -167,8 +191,25 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let inspeccion of inspecciones | filter : filterPostI" class="text-center">
+          <tr *ngFor="let inspeccion of inspecciones" class="text-center">
             <td>{{inspeccion.id}}</td>
+            <td>{{inspeccion.cliente}}</td>
+            <td>{{inspeccion.product}}</td>
+            <td>{{inspeccion.frecinsp}}</td>
+            <td>{{inspeccion.tammuestra}}</td>
+            <td>{{inspeccion.clave}}</td>
+            <td>{{inspeccion.longespiral}}</td>
+            <td>{{inspeccion.tiempo}}</td>
+            <td>{{inspeccion.observaciones}}</td>
+            <td>{{inspeccion.dminterior}}</td>
+            <td>{{inspeccion.espcalib}}</td>
+            <td>{{inspeccion.colb}}</td>
+            <td>{{inspeccion.jefeprod}}</td>
+            <td>{{inspeccion.param1}}</td>
+            <td>{{inspeccion.param2}}</td>
+            <td>{{inspeccion.param3}}</td>
+            <td>{{inspeccion.param4}}</td>
+            <td>{{inspeccion.param5}}</td>
             <td>{{inspeccion.supturno}}</td>
             <td>{{inspeccion.nomaquina}}</td>
             <td>{{inspeccion.fecha}}</td>
